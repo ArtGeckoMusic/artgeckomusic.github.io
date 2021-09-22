@@ -21,6 +21,12 @@ a:link, a:visited {
   margin-bottom: 20px;
 }
 
+@media (max-width: 600px) {
+  .contact {
+    font-size: 4vw;
+  }
+}
+
 /* #contact1 {
   float: left;
 }
