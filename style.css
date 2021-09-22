@@ -21,9 +21,10 @@ a:link, a:visited {
   margin-bottom: 20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .contact {
     font-size: 4vw;
+    color: red;
   }
 }
 
