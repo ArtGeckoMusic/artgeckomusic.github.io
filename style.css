@@ -1,10 +1,40 @@
 body {
-  background-color: blue;
-  color: yellow;
+  background-color:blue;
   
-  text-align: center;
 }
+
+a:link, a:visited {
+  color: lawngreen;
+}
+
+#contactContainer {
+  /* display: inline-block; */
+}
+
+.contact {
+  color: lawngreen;
+  font-size: 4vh;
+  font-weight: bolder;
+  width: 100%;
+  /* display: inline-block; */
+  border: 1px solid lawngreen;
+  margin-bottom: 20px;
+}
+
+/* #contact1 {
+  float: left;
+}
+
+#contact2 {
+  float: right;
+} */
 
 .gifContainer {
   
+}
+
+#mainContainer {
+  color: yellow;
+  
+  text-align: center;
 }
