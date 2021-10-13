@@ -87,13 +87,15 @@ h2 {
 @media (max-width: 1030px) {
   #title {
     font-size: 50;
+    width: 100%;
+    text-align: center;
   }
   h2 {
     font-size: 40;
   }
   #bio {
     font-size: 20;
-    width: 80%;
+    width: 90%;
   }
   #leftCol, #rightCol {
     width: 100%;
