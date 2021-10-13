@@ -97,15 +97,15 @@ h2 {
     font-size: 4vw;
     width: 90%;
   }
-  #leftCol, #rightCol {
+  #leftCol {
     width: 100%;
     padding-bottom: 0;
-  }
-  #leftCol {
     border-right: 0;
     margin-bottom: 0;
   }
   #rightCol {
+    width: 100%;
+    padding-bottom: 0;
     padding-top: 0;
   }
   .perfVid {
@@ -116,7 +116,7 @@ h2 {
     height: 300px;
     width: 400px;
   }
-  #contact, #personnel, #shows {
+  #contact, #personnel, #shows, .vidCaption {
     font-size: 5vw;
   }
 }
