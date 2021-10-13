@@ -1,15 +1,17 @@
 body {
+  margin: 0;
+}
+
+#mainContainer {
   background-color:blue;
-  
+  color: yellow;
+  text-align: center;
 }
 
 a:link, a:visited {
   color: lawngreen;
 }
 
-#contactContainer {
-  /* display: inline-block; */
-}
 
 .contact {
   margin: 0 auto;
@@ -17,7 +19,6 @@ a:link, a:visited {
   font-size: 4vh;
   font-weight: bolder;
   width: 100%;
-  /* display: inline-block; */
   border: 3px solid lawngreen;
   margin-bottom: 20px;
 }
@@ -25,23 +26,5 @@ a:link, a:visited {
 @media (max-width: 1000px) {
   .contact {
     font-size: 3vw;
-    /* color: red; */
   }
-}
-
-/* #contact1 {
-  float: left;
-}
-
-#contact2 {
-  float: right;
-} */
-
-.gifContainer {
-  
-}
-
-#mainContainer {
-  color: yellow;
-  text-align: center;
 }
