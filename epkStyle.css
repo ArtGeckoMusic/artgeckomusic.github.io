@@ -86,15 +86,15 @@ h2 {
 
 @media (max-width: 1030px) {
   #title {
-    font-size: 50;
+    font-size: 50px;
     width: 100%;
     text-align: center;
   }
   h2 {
-    font-size: 40;
+    font-size: 40px;
   }
   #bio {
-    font-size: 20;
+    font-size: 20px;
     width: 90%;
   }
   #leftCol, #rightCol {
@@ -117,6 +117,6 @@ h2 {
     width: 400px;
   }
   #contact, #personnel, #shows {
-    font-size: 30;
+    font-size: 5vw;
   }
 }
