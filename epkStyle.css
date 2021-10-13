@@ -116,7 +116,10 @@ h2 {
     height: 300px;
     width: 400px;
   }
-  #contact, #personnel, #shows, .vidCaption {
+  #contact, #personnel, #shows {
     font-size: 5vw;
+  }
+  .vidCaption {
+    font-size: 3vw;
   }
 }
