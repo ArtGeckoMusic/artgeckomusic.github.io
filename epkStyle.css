@@ -12,6 +12,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 15px;
   border-bottom: 3px solid white;
 }
 
@@ -96,10 +97,14 @@ h2 {
   }
   #leftCol, #rightCol {
     width: 100%;
+    padding-bottom: 0;
   }
   #leftCol {
     border-right: 0;
     margin-bottom: 0;
+  }
+  #rightCol {
+    padding-top: 0;
   }
   .perfVid {
     width: 300px;
@@ -110,6 +115,6 @@ h2 {
     width: 200px;
   }
   #contact, #personnel, #shows {
-    font-size: 25;
+    font-size: 30;
   }
 }
