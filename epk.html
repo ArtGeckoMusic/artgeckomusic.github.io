@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <title>Art Gecko EPK</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="epk.js"></script>
     <link rel="stylesheet" type="text/css" href="epkStyle.css">
   </head>
   <body>
@@ -21,30 +21,33 @@
         <h2>
           Contact
         </h2>
-        <div id="contact">
+        <div id="contact" class="section">
           <p>Email: <a href="mailto:artgeckomusic@gmail.com">artgeckomusic@gmail.com</a></p>
           <p>Instagram: <a href="https://www.instagram.com/artgeckomusic/">@artgeckomusic</a></p>
         </div>
         <h2>
+          Photos <a href="assets/zippedPics.zip" download="ArtGeckoPhotos">(download)</a>
+        </h2>
+        <div id="photos" class="section">
+          <img class="bandPic" src="assets/bandPic1.jpg">
+          <img class="bandPic" src="assets/bandPic3.jpg">
+          <img class="bandPic" src="assets/bandPic2.jpg">
+          <img class="bandPic" src="assets/bandPic4.jpg">
+        </div>
+        <h2>
           Personnel
         </h2>
-        <div id="personnel">
+        <div id="personnel" class="section">
           <p>Cole: Vocals, guitar, keys, drum machine</p>
           <p>Jess: Vocals</p>
           <p>Ilana: Vocals</p>
           <p>Aaron: Guitar, Bass</p>
           <p>Jesse: Drums, Bass</p>
         </div>
-        <h2>Photos</h2>
-        <div id="photos">
-          <img class="bandPic" src="assets/bandPic1.jpg">
-          <img class="bandPic" src="assets/bandPic3.jpg">
-          <img class="bandPic" src="assets/bandPic2.jpg">
-          <img class="bandPic" src="assets/bandPic4.jpg">
-        </div>
+        
       </div>
       <div id="rightCol">
-        <h2 id="perfVids">
+        <h2 id="perfVids" class="section">
           Performance Videos
         </h2>
         <iframe id="pinkCastle" class="perfVid" src="https://www.youtube.com/embed/IalN1mcVvrY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -52,7 +55,7 @@
         <iframe id="tinyDesk" class="perfVid" src="https://www.youtube.com/embed/5_X4VARfA2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
         <p class="vidCaption">Tiny desk type performance</p>
         <h2>Upcoming Shows</h2>
-        <div id="shows">
+        <div id="shows" class="section">
           <p>10/16: Boroughs End - Bellingham</p>
           <p>12/4: Lambda Chi Alpha - Seattle</p>
         </div>
