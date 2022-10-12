@@ -85,12 +85,12 @@ h2 {
 
 #firstBandPic {
   object-position: 50% 30%;
-  height: 350px;
+  /* height: 350px; */
 }
 
 #secondBandPic {
   object-position: 50% 20%;
-  height: 350px;
+  /* height: 350px; */
 }
 
 #stageLayout {
