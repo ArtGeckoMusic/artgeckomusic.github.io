@@ -14,7 +14,7 @@ $(document).ready(() => {
 
   $("#fartButton").on("click touchend", () => {
     alert("fart");
-    let fart = new Audio("media/phart sound.wav");
+    let fart = new Audio("assets/media/phart sound.wav");
     fart.play();
     console.log("farting");
 
