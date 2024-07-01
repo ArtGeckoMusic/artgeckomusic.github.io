@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background-color:blue;
+}
+
+#mainContainer {
+  
+  color: yellow;
+  text-align: center;
+}
+
+a:link, a:visited {
+  color: lawngreen;
+}
+
+
+.contact {
+  margin: 0 auto;
+  color: lawngreen;
+  font-size: 4vh;
+  font-weight: bolder;
+  width: 100%;
+  border: 3px solid lawngreen;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+  .contact {
+    font-size: 3vw;
+  }
+}
