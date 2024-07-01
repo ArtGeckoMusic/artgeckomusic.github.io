@@ -5,12 +5,23 @@
 
 html {
   font-size: 16px;
+  --outline-color: rgb(176, 217, 253);
+  --main-text-color: #1b1b1b;
+  color: var(--main-text-color);
+}
+
+a:visited {
+  color: var(--main-text-color);
 }
 
 body {
   width: 100%;
   height: 100%;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Inconsolata";
 }
 
 #background {
@@ -25,56 +36,53 @@ header {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 15%;
+  height: 100px;
   width: 100%;
-  padding-top: 1%;
-}
-
-.headerIconArea {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10%;
-  height: 100%;
+  padding-top: calc(1rem + 1vh);
 }
 
 .headerIcon {
-  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(4rem + 3vw);
+  height: 100%;
+}
+
+.headerIcon > img {
+  width: 45%;
 }
 
 #headerLogo {
-  background-image: url("img/logoCropped.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 80%;
   height: 100%;
+  text-align: center;
+}
+
+#headerLogo > img {
+  max-height: 100%;
+  width: calc(8rem + 3vw);
 }
 
 #mainNav {
   position: relative;
   width: 100%;
-  height: 5%;
   text-align: center;
-  margin-top: 35px;
-  --outline-color: rgb(176, 217, 253);
+  margin: 35px 0px 35px 0px;
+  
 }
 
 #mainNav > a {
-  font-family: "Inconsolata";
+  
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
-  font-size: calc(1rem + 1vw);
+  font-size: calc(1.5rem + 0.5vw);
   margin-right: calc(5px + 2vw);
-  color: #373737;
-  /* color: rgb(126, 19, 19); */
-  /* background-color: white; */
-  /* -webkit-text-stroke: 0.25px white; */
-  text-shadow: -.25px -.25px 0 var(--outline-color), .25px -.25px 0 var(--outline-color), .25px .25px 0 var(--outline-color),
-  .25px .25px 0 var(--outline-color);
+  
+  -moz-text-shadow: 0 0 8px var(--outline-color);
+  text-shadow: 0 0 8px var(--outline-color);
   padding: 5px;
 }
 
@@ -82,24 +90,127 @@ header {
   margin-right: 0;
 }
 
+
+
+
+
+
+#homeContainer {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#homeContent {
+  width: 50%;
+  height: 100%;
+  border: 10px rgba(30, 30, 30, 0.596);
+  border-style: outset;
+  border-radius: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  -moz-text-shadow: 0 0 3px var(--outline-color);
+  text-shadow: 0 0 3px var(--outline-color);
+
+  overflow-y: scroll;
+  
+}
+
+/* width */
+#homeContent::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+/* #homeContent::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+} */
+ 
+/* Handle */
+#homeContent::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.386); 
+  border: 2px solid var(--outline-color);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+#homeContent::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.505); 
+}
+
+#spotifyContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 20px 40px 20px;
+}
+
+#spotifyContainer > * {
+  width: 50%;
+}
+
+#spotifyEmbed {
+  height: 90px;
+}
+
+#homeMerchContainer > h1 {
+  text-decoration: underline;
+}
+
+#homeMerch {
+  display: flex;
+  flex-direction: column;
+}
+
+.merchRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+  padding-bottom: 20px; 
+}
+
+.merchItem {
+  width: 50%;
+}
+
+.merchItem > img {
+  width: 80%;
+  /* height: 60%; */
+}
+
+
+
+
+
+
+
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
-  height: 10%;
+  height: 40px;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 5%;
-  padding-bottom: 10px;
+  /* padding-bottom: 1%; */
+  margin: 20px 0px 20px 0px;
 }
 
-.footerIconArea {
+.footerIcon {
   display: inline-block;
   height: 100%;
 }
 
-.footerIcon {
-  height: 80%;
+.footerIcon > img {
+  height: 100%;
 }
