@@ -24,12 +24,15 @@ body {
   font-family: "Inconsolata";
 }
 
-#background {
+.background {
   width: 100%;
   height: 100%;
+  position: absolute;
+}
+
+#mainBG {
   background-image: url("img/bandPic4.jpg");
   background-size: cover;
-  position: absolute;
 }
 
 header {
@@ -60,7 +63,7 @@ header {
   text-align: center;
 }
 
-#headerLogo > img {
+#headerLogo img {
   max-height: 100%;
   width: calc(8rem + 3vw);
 }
@@ -179,15 +182,20 @@ header {
 
 .merchItem {
   width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
-.merchItem > img {
+.merchItem img {
   width: 80%;
   /* height: 60%; */
 }
 
 
 
+/* .shopify-buy-frame--product {
+  display: none !important;
+} */
 
 
 
