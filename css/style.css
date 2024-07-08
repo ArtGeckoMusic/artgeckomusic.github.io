@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Inconsolata";
-  src: url("fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf") format("truetype");
+  src: url("../fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf") format("truetype");
 }
 
 html {
@@ -10,7 +10,7 @@ html {
   color: var(--main-text-color);
 }
 
-a:visited {
+a, a:visited {
   color: var(--main-text-color);
 }
 
@@ -31,11 +31,11 @@ body {
 }
 
 #mainBG {
-  background-image: url("img/bandPic4.jpg");
+  background-image: url("../img/bandPic4.jpg");
   background-size: cover;
 }
 
-header {
+.mainHeader {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -221,4 +221,59 @@ footer {
 
 .footerIcon > img {
   height: 100%;
+}
+
+
+
+
+
+.otherHeader {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #373737;
+  height: 90px;
+}
+
+.headerLeft, .headerRight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.otherHeaderIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(4rem + 1.5vw);
+  height: 80%;
+}
+
+.otherHeaderIcon > img {
+  width: 35%;
+}
+
+.headerLogoSmall {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.headerLogoSmall img {
+  max-height: 100%;
+  width: calc(5rem + 1.5vw);
+}
+
+.headerRight {
+  color: white;
+  font-size: calc(1.1rem + 0.5vw);
+  padding-right: 20px;
+}
+
+.headerRight a {
+  color: white;
+  text-decoration: none;
+  margin-left: calc(0.5rem + 1vw);
 }

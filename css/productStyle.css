@@ -1,0 +1,23 @@
+#productBG {
+  background-color: #727273;
+}
+
+#productBGImg {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/backgroundGeckos.png");
+  background-size: cover;
+  opacity: 0.14;
+}
+
+.productContainer {
+  display: none;
+  position: relative;
+  margin-top: 50px;
+  color: white !important;
+}
+
+.shopify-buy__product__title {
+  color: white !important;
+}
+
