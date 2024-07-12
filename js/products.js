@@ -81,6 +81,9 @@
           "toggle": {}
         },
       });
+    }).then(function() {
+      console.log('loaded');
+      showOrHideProduct();
     });
   }
 })();
@@ -324,6 +327,9 @@
   "toggle": {}
 },
       });
+    }).then(function() {
+      console.log('loaded');
+      showOrHideProduct();
     });
   }
 })();

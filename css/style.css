@@ -227,7 +227,7 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 5%;
+  gap: calc(1rem + 1.5vw);
   /* padding-bottom: 1%; */
   margin: 20px 0px 20px 0px;
   @media only screen and (max-width: 450px) {
@@ -257,7 +257,7 @@ footer {
   background-color: #373737;
   height: 90px;
   @media only screen and (max-width: 750px) {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 }
 
@@ -300,7 +300,8 @@ footer {
   flex: 1;
   @media only screen and (max-width: 750px) {
     padding-right: 0px;
-    flex: auto;
+    display: block;
+    flex: none;
   }
 }
 
@@ -310,6 +311,12 @@ footer {
   margin-left: calc(0.5rem + 1vw);
 }
 
+#headerNav {
+  @media only screen and (max-width: 750px) {
+    display: none;
+  }
+}
+
 #headerShop {
   display: flex;
   @media only screen and (max-width: 750px) {
@@ -317,8 +324,13 @@ footer {
   }
 }
 
-#headerNav {
-  @media only screen and (max-width: 750px) {
-    display: none;
-  }
+.shopify-buy-frame--toggle {
+  top: 45px !important;
+  right: 10px !important;
+  background-image: url(../icons/cartWhite.png);
+
 }
+
+/* .shopify-buy-frame--toggle > iframe > document {
+  display: none;
+} */
