@@ -3,11 +3,23 @@
   src: url("../fonts/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Do Hyeon";
+  src: url("../fonts/dohyeon/FONT/DOHYEON.ttf")format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Regular.ttf")format("truetype");
+}
+
 html {
   font-size: 16px;
   --outline-color: rgb(176, 217, 253);
   --main-text-color: #1b1b1b;
   color: var(--main-text-color);
+  height: 100%;
+  width: 100%;
 }
 
 a, a:visited {
@@ -110,9 +122,9 @@ body {
 }
 
 #homeContent {
-  width: 50%;
+  width: 60%;
   height: 100%;
-  border: 10px rgba(30, 30, 30, 0.596);
+  border: 8px rgba(30, 30, 30, 0.596);
   border-style: outset;
   border-radius: 15px;
   font-weight: bold;
@@ -121,8 +133,11 @@ body {
   text-shadow: 0 0 3px var(--outline-color);
 
   overflow-y: scroll;
-  
+  @media only screen and (max-width: 850px) {
+    width: 90%;
+  }
 }
+
 
 /* width */
 #homeContent::-webkit-scrollbar {
@@ -183,19 +198,22 @@ body {
 .merchItem {
   width: 50%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.merchItem img {
-  width: 80%;
-  /* height: 60%; */
+.merchPic img {
+  width: 90%;
 }
 
-
-
-/* .shopify-buy-frame--product {
-  display: none !important;
-} */
+.merchLabel {
+  background-color: rgba(255, 255, 255, 0.781);
+  width: 90%;
+  margin: 0;
+  font-size: 24px;
+  text-decoration: none;
+}
 
 
 
@@ -212,6 +230,9 @@ footer {
   gap: 5%;
   /* padding-bottom: 1%; */
   margin: 20px 0px 20px 0px;
+  @media only screen and (max-width: 450px) {
+    margin: 10px 0px 10px 0px;
+  }
 }
 
 .footerIcon {
@@ -228,12 +249,16 @@ footer {
 
 
 .otherHeader {
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   background-color: #373737;
   height: 90px;
+  @media only screen and (max-width: 750px) {
+    justify-content: space-evenly;
+  }
 }
 
 .headerLeft, .headerRight {
@@ -270,10 +295,30 @@ footer {
   color: white;
   font-size: calc(1.1rem + 0.5vw);
   padding-right: 20px;
+  display: flex;
+  justify-content: end;
+  flex: 1;
+  @media only screen and (max-width: 750px) {
+    padding-right: 0px;
+    flex: auto;
+  }
 }
 
 .headerRight a {
   color: white;
   text-decoration: none;
   margin-left: calc(0.5rem + 1vw);
+}
+
+#headerShop {
+  display: flex;
+  @media only screen and (max-width: 750px) {
+    display: flex;
+  }
+}
+
+#headerNav {
+  @media only screen and (max-width: 750px) {
+    display: none;
+  }
 }

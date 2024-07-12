@@ -8,5 +8,5 @@ function showOrHideProduct() {
   const productValue = urlParams.get('product');
   console.log(productValue);  
 
-  $('#' + productValue).css('display', 'block');
+  $('#' + productValue).css('display', 'flex');
 }
