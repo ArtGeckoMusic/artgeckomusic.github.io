@@ -42,186 +42,7 @@ a, a:visited {
   position: absolute;
 }
 
-#mainBG {
-  background-image: url("../img/bandPic4.jpg");
-  background-size: cover;
-}
 
-.mainHeader {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
-  width: 100%;
-  padding-top: calc(1rem + 1vh);
-}
-
-.headerIcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: calc(4rem + 3vw);
-  height: 100%;
-}
-
-.headerIcon > img {
-  width: 45%;
-}
-
-#headerLogo {
-  height: 100%;
-  text-align: center;
-}
-
-#headerLogo img {
-  max-height: 100%;
-  width: calc(8rem + 3vw);
-}
-
-#mainNav {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  margin: 35px 0px 35px 0px;
-  font-family: "Inconsolata";
-  
-}
-
-#mainNav > a {
-  
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  font-size: calc(1.5rem + 0.5vw);
-  margin-right: calc(5px + 2vw);
-  
-  -moz-text-shadow: 0 0 8px var(--outline-color);
-  text-shadow: 0 0 8px var(--outline-color);
-  padding: 5px;
-}
-
-#mainNav > a:last-child {
-  margin-right: 0;
-}
-
-
-
-
-
-
-#homeContainer {
-  position: relative;
-  flex: 1;
-  min-height: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-#homeContent {
-  width: 60%;
-  height: 100%;
-  border: 8px rgba(30, 30, 30, 0.596);
-  border-style: outset;
-  border-radius: 15px;
-  font-weight: bold;
-  text-decoration: none;
-  -moz-text-shadow: 0 0 3px var(--outline-color);
-  text-shadow: 0 0 3px var(--outline-color);
-
-  overflow-y: scroll;
-  @media only screen and (max-width: 850px) {
-    width: 90%;
-  }
-}
-
-
-/* width */
-#homeContent::-webkit-scrollbar {
-  width: 15px;
-}
-
-/* Track */
-/* #homeContent::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
-} */
- 
-/* Handle */
-#homeContent::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.386); 
-  border: 2px solid var(--outline-color);
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-#homeContent::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.505); 
-}
-
-#spotifyContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 20px 20px 40px 20px;
-  @media only screen and (max-width: 850px) {
-    flex-direction: column;
-
-  }
-}
-
-#spotifyContainer > * {
-  width: 50%;
-  @media only screen and (max-width: 850px) {
-    width: auto;
-  }
-}
-
-#spotifyEmbed {
-  height: 90px;
-}
-
-#homeMerchContainer > h1 {
-  text-decoration: underline;
-}
-
-#homeMerch {
-  display: flex;
-  flex-direction: column;
-}
-
-.merchRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  height: 50%;
-  padding-bottom: 20px; 
-}
-
-.merchItem {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.merchPic img {
-  width: 90%;
-}
-
-.merchLabel {
-  background-color: rgba(255, 255, 255, 0.781);
-  width: 90%;
-  margin: 0;
-  font-size: 24px;
-  text-decoration: none;
-}
 
 
 
@@ -239,7 +60,7 @@ footer {
   /* padding-bottom: 1%; */
   margin: 20px 0px 20px 0px;
   @media only screen and (max-width: 450px) {
-    margin: 10px 0px 10px 0px;
+    margin: 20px 0px 10px 0px;
   }
 }
 
@@ -334,10 +155,11 @@ footer {
 
 .shopify-buy-frame--toggle {
   top: 45px !important;
-  right: 10px !important;
+  margin-right: 10px !important;
   width: calc(5rem);
   height: 90px !important;
   display: block !important;
+  visibility: hidden;
   /* margin-left: 10px !important; */
   /* background-image: url(../icons/cartWhite.png); */
 }
@@ -363,14 +185,6 @@ footer {
   background-color: transparent;
 }
 
-/* .shopify-buy__cart-toggle > img {
-  position: fixed;
-  width: calc(2.5rem + 8vw);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
-
 .shopify-buy__icon-cart {
   display: none;
 }
@@ -383,4 +197,22 @@ footer {
   border: 1px solid white;
   border-radius: 10px;
   margin: 0;
+}
+
+.productContainer {
+  display: none;
+  flex-direction: row;
+  position: relative;
+  margin-top: 50px;
+  color: #F3F2F2;
+  width: 90%;
+  /* height: 100%; */
+  @media only screen and (max-width: 750px) {
+    flex-direction: column;
+    margin-top: 20px;
+    width: auto;
+  }
+  /* @media only screen and (max-width: 450px) {
+    margin-top: 0px;
+  } */
 }

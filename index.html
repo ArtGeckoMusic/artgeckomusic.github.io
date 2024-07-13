@@ -4,10 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
     <title>Art Gecko EPK</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <!-- <script src="products.js"></script> -->
+    <script src="../js/productScript.js"></script>
+    <script src="../js/dummyProduct.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/homeStyle.css">
   </head>
-  <body class="realBody">
+  <body id="homeBody" class="realBody">
     <div id="mainBG" class="background"></div>
     <header class="mainHeader">
       <div id="headerHamb" class="headerIcon">
@@ -18,7 +20,7 @@
         <a href=""><img src="img/logoCropped.png"></a>
       </div>
       <div id="headerShop" class="headerIcon">
-        <img id="headerShopIcon" src="icons/cart.png">
+        <!-- <img id="headerShopIcon" src="icons/cartWhite.png"> -->
       </div>
     </header>
     <div id="mainNav">
@@ -42,23 +44,23 @@
           <div id="homeMerch">
             <div class="merchRow">
               <div class="merchItem">
-                <a class="merchPic" href="html/product.html?product=pin"><img src="img/merch/pin.png"></a>
-                <a class="merchLabel" href="html/product.html?product=pin">Cutie gecko pin</a>
+                <a class="merchPic" href="html/products.html?product=pin"><img src="img/merch/pin.png"></a>
+                <a class="merchLabel" href="html/products.html?product=pin">Cutie gecko pin</a>
               </div>
               <div class="merchItem">
-                <a class="merchPic" href="html/product.html?product=sticker3"><img src="img/merch/sticker3.png"></a>
-                <a class="merchLabel" href="html/product.html?product=sticker3">Dreaming gecko sticker</a>
+                <a class="merchPic" href="html/products.html?product=sticker3"><img src="img/merch/sticker3.png"></a>
+                <a class="merchLabel" href="html/products.html?product=sticker3">Dreaming gecko sticker</a>
               </div>
               
             </div>
             <div class="merchRow">
               <div class="merchItem">
-                <a class="merchPic" href="html/product.html?product=sticker1"><img src="img/merch/sticker1.png"></a>
-                <a class="merchLabel" href="html/product.html?product=sticker1">Boxing gecko sticker</a>
+                <a class="merchPic" href="html/products.html?product=sticker1"><img src="img/merch/sticker1.png"></a>
+                <a class="merchLabel" href="html/products.html?product=sticker1">Boxing gecko sticker</a>
               </div>
               <div class="merchItem">
-                <a class="merchPic" href="html/product.html?product=beanie"><img src="img/merch/beanie.png"></a>
-                <a class="merchLabel" href="html/product.html?product=beanie">Beanie</a>
+                <a class="merchPic" href="html/products.html?product=beanie"><img src="img/merch/beanie.png"></a>
+                <a class="merchLabel" href="html/products.html?product=beanie">AG logo beanie</a>
               </div>
             </div>
           </div>
@@ -79,5 +81,8 @@
         <img src="../icons/youtube.png">
       </a>
     </footer>
+    <div id="dummyProduct" class="productContainer">
+      <div id='product-component-1720598661919'></div>
+    </div>
   </body>
 </html>

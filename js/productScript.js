@@ -8,7 +8,7 @@ $(document).ready(() => {
 function showOrHideProduct() {
   const urlParams = new URLSearchParams(window.location.search);
   const productValue = urlParams.get('product');
-  // console.log(productValue);  
+  console.log(productValue);  
 
   $('#' + productValue).css('display', 'flex');
 }
@@ -24,34 +24,43 @@ var checkExist = setInterval(function() {
   else {
     // console.log('nope');
   }
-}, 10); // check every 50ms
+}, 10); // check every 10ms
 
 
 function customizeCartButton() {
   console.log('modding cart button');
   
+  // inject my custom css into the iframe that shopify creates for the cart button
+  // need to override the shitty styling it comes with
   let cssLink = document.createElement('link');
-  cssLink.href = '../css/style.css'; 
+  if (document.body.id == 'homeBody') {
+    cssLink.href = '../css/homeStyle.css'; 
+  }
+  else {
+    cssLink.href = '../css/style.css'; 
+  }
   cssLink.rel = 'stylesheet'; 
   cssLink.type = 'text/css'; 
   $('.shopify-buy-frame--toggle').find('iframe').contents()[0].head.appendChild(cssLink);
 
-
-  let cart = $('.shopify-buy-frame--toggle').find('iframe').contents().find('.shopify-buy__cart-toggle')[0];
-
+  // wait a sec to avoid default styling loading then immediately changing
+  setTimeout(() => {
+    $('.shopify-buy-frame--toggle').css('visibility', 'visible');
+  }, '300');
 
   
-  var target = $('.shopify-buy-frame--toggle').find('iframe').contents().find('.shopify-buy__cart-toggle__count')[0];
+
+  let cartCount = $('.shopify-buy-frame--toggle').find('iframe').contents().find('.shopify-buy__cart-toggle__count')[0];
 
   // look for changes to the cart count icon - if it's zero, hide it. 
   // This way we can always show the cart, just not the number of items in it if zero
   var observer = new MutationObserver(function(mutations) {
-      if (target.innerText == '0' && $(target).css('visibility') == 'visible') {
-        $(target).css('visibility', 'hidden');
-        console.log('empty');
-      }  
+    if (cartCount.innerText == '0' && $(cartCount).css('visibility') == 'visible') {
+      $(cartCount).css('visibility', 'hidden');
+      console.log('empty');
+    }  
   });
-  observer.observe(target, {
+  observer.observe(cartCount, {
       attributes:    true,
       childList:     true,
       characterData: true,
