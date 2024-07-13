@@ -327,10 +327,14 @@ footer {
 .shopify-buy-frame--toggle {
   top: 45px !important;
   right: 10px !important;
-  background-image: url(../icons/cartWhite.png);
-
+  /* background-image: url(../icons/cartWhite.png); */
 }
 
-/* .shopify-buy-frame--toggle > iframe > document {
+.shopify-buy__cart-toggle {
+  background-color: transparent;
+}
+
+.shopify-buy__icon-cart {
   display: none;
-} */
+}
+

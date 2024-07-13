@@ -82,7 +82,7 @@
         },
       });
     }).then(function() {
-      console.log('loaded');
+      // console.log('loaded');
       showOrHideProduct();
     });
   }
@@ -175,7 +175,7 @@
         },
       });
     }).then(function() {
-      console.log('loaded');
+      // console.log('loaded');
       showOrHideProduct();
     });
   }
@@ -328,7 +328,7 @@
 },
       });
     }).then(function() {
-      console.log('loaded');
+      // console.log('loaded');
       showOrHideProduct();
     });
   }
