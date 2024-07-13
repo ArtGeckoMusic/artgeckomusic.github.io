@@ -320,7 +320,7 @@ footer {
 
 #headerShop {
   display: flex;
-  width: calc(10px + 7rem);
+  width: calc(10px + 6rem);
   @media only screen and (max-width: 750px) {
     display: flex;
   }
@@ -329,27 +329,40 @@ footer {
 .shopify-buy-frame--toggle {
   top: 45px !important;
   right: 10px !important;
-  width: calc(7rem);
+  width: calc(5rem);
+  height: 90px !important;
+  /* margin-left: 10px !important; */
   /* background-image: url(../icons/cartWhite.png); */
 }
 
 .shopify-buy-frame--toggle > iframe {
   width: 100% !important;
+  height: 100% !important;
 }
 
 .shopify-buy__cart-toggle {
   background-color: transparent;
   padding: 0;
-}
-
-.shopify-buy__cart-toggle > img {
+  background-image: url('../icons/cartWhite.png');
+  height: calc(2.5rem + 8vw);
+  background-size: cover;
   position: fixed;
-  /* left: 0; */
-  width: calc(2.5rem + 10vw);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.shopify-buy__cart-toggle:hover {
+  background-color: transparent;
+}
+
+/* .shopify-buy__cart-toggle > img {
+  position: fixed;
+  width: calc(2.5rem + 8vw);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
 
 .shopify-buy__icon-cart {
   display: none;
@@ -357,10 +370,10 @@ footer {
 
 .shopify-buy__cart-toggle__count {
   position: fixed;
-  right: 10px;
-  top: 0;
+  right: -15px;
+  top: -10px;
   width: 25px;
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 10px;
   margin: 0;
 }
