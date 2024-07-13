@@ -1,5 +1,7 @@
 $(document).ready(() => {
-  
+  $('.shopify-buy__cart-toggle__count').on('DOMSubtreeModified', function(){
+    console.log('changed');
+  });
 
 });
 
@@ -37,8 +39,22 @@ function customizeCartButton() {
 
   let cart = $('.shopify-buy-frame--toggle').find('iframe').contents().find('.shopify-buy__cart-toggle')[0];
 
-  // let newCartIcon = document.createElement('img');
-  // newCartIcon.src = '../icons/cartWhite.png';
 
-  // cart.appendChild(newCartIcon);
+  
+  var target = $('.shopify-buy-frame--toggle').find('iframe').contents().find('.shopify-buy__cart-toggle__count')[0];
+
+  // look for changes to the cart count icon - if it's zero, hide it. 
+  // This way we can always show the cart, just not the number of items in it if zero
+  var observer = new MutationObserver(function(mutations) {
+      if (target.innerText == '0' && $(target).css('visibility') == 'visible') {
+        $(target).css('visibility', 'hidden');
+        console.log('empty');
+      }  
+  });
+  observer.observe(target, {
+      attributes:    true,
+      childList:     true,
+      characterData: true,
+      subtree:       true
+  });
 }

@@ -168,10 +168,17 @@ a, a:visited {
   flex-direction: row;
   justify-content: space-between;
   margin: 20px 20px 40px 20px;
+  @media only screen and (max-width: 850px) {
+    flex-direction: column;
+
+  }
 }
 
 #spotifyContainer > * {
   width: 50%;
+  @media only screen and (max-width: 850px) {
+    width: auto;
+  }
 }
 
 #spotifyEmbed {
@@ -330,6 +337,7 @@ footer {
   right: 10px !important;
   width: calc(5rem);
   height: 90px !important;
+  display: block !important;
   /* margin-left: 10px !important; */
   /* background-image: url(../icons/cartWhite.png); */
 }
