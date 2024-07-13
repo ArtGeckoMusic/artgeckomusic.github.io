@@ -22,10 +22,6 @@ html {
   width: 100%;
 }
 
-a, a:visited {
-  color: var(--main-text-color);
-}
-
 .realBody {
   width: 100%;
   height: 100%;
@@ -41,6 +37,20 @@ a, a:visited {
   height: 100%;
   position: absolute;
 }
+
+.tiled.background {
+  background-color: #727273;
+}
+
+.tiledBGImg {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/backgroundGeckos.png");
+  background-size: cover;
+  opacity: 0.14;
+}
+
+
 
 
 
@@ -198,6 +208,11 @@ footer {
   border-radius: 10px;
   margin: 0;
 }
+
+/* .shopify-buy__product__variant-selectors {
+  margin-top: 10px;
+} */
+
 
 .productContainer {
   display: none;
