@@ -273,12 +273,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(4rem);
+  width: calc(10px + 6rem);
   height: 80%;
 }
 
 .otherHeaderIcon > img {
-  width: 35%;
+  width: 30%;
 }
 
 .headerLogoSmall {
@@ -320,7 +320,6 @@ footer {
 
 #headerShop {
   display: flex;
-  width: calc(10px + 6rem);
   @media only screen and (max-width: 750px) {
     display: flex;
   }
