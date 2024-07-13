@@ -212,22 +212,3 @@ footer {
 /* .shopify-buy__product__variant-selectors {
   margin-top: 10px;
 } */
-
-
-.productContainer {
-  display: none;
-  flex-direction: row;
-  position: relative;
-  margin-top: 50px;
-  color: #F3F2F2;
-  width: 90%;
-  /* height: 100%; */
-  @media only screen and (max-width: 750px) {
-    flex-direction: column;
-    margin-top: 20px;
-    width: auto;
-  }
-  /* @media only screen and (max-width: 450px) {
-    margin-top: 0px;
-  } */
-}

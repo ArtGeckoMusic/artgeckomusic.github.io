@@ -43,6 +43,14 @@ function customizeCartButton() {
   cssLink.type = 'text/css'; 
   $('.shopify-buy-frame--toggle').find('iframe').contents()[0].head.appendChild(cssLink);
 
+  // if cart has 0 items in it on this page load, hide the count icon
+  // This way we can always show the cart, just not the number of items in it if zero
+  let cartCount = $('.shopify-buy-frame--toggle').find('iframe').contents().find('.shopify-buy__cart-toggle__count')[0];
+  if (cartCount.innerText == '0') {
+    $(cartCount).css('visibility', 'hidden');
+    console.log('cart empty');
+  }
+
   // wait a sec to avoid default styling loading then immediately changing
   setTimeout(() => {
     $('.shopify-buy-frame--toggle').css('visibility', 'visible');
@@ -50,14 +58,13 @@ function customizeCartButton() {
 
   
 
-  let cartCount = $('.shopify-buy-frame--toggle').find('iframe').contents().find('.shopify-buy__cart-toggle__count')[0];
 
   // look for changes to the cart count icon - if it's zero, hide it. 
   // This way we can always show the cart, just not the number of items in it if zero
   var observer = new MutationObserver(function(mutations) {
     if (cartCount.innerText == '0' && $(cartCount).css('visibility') == 'visible') {
       $(cartCount).css('visibility', 'hidden');
-      console.log('empty');
+      console.log('cart empty');
     }  
   });
   observer.observe(cartCount, {

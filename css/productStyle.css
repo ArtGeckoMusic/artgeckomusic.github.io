@@ -19,7 +19,23 @@ body {
   overflow-y: auto;
 }
 
-
+.productContainer {
+  display: none;
+  flex-direction: row;
+  position: relative;
+  margin-top: 50px;
+  color: #F3F2F2;
+  width: 90%;
+  /* height: 100%; */
+  @media only screen and (max-width: 750px) {
+    flex-direction: column;
+    margin-top: 0px;
+    width: auto;
+  }
+  /* @media only screen and (max-width: 450px) {
+    margin-top: 0px;
+  } */
+}
 
 
 .productPic, .productDescription {
@@ -33,15 +49,16 @@ body {
   max-height: 100%;
   width: calc(20rem + 20vw);
   @media only screen and (max-width: 750px) {
-    max-height: 60%;
+    /* max-height: 60%; */
     width: auto;
   }
 }
 
 
 .productPic img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: auto;
+  /* max-height: 100%; */
   display: block;
   
 }

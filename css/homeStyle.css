@@ -41,12 +41,18 @@ a, a:visited {
 }
 
 #mainNav {
+  display: flex;
+  flex-direction: row;
+  gap: calc(5px + 2vw);
+
+  justify-content: center;
   position: relative;
   width: 100%;
-  text-align: center;
   margin: 35px 0px 35px 0px;
   font-family: "Inconsolata";
-  
+  @media only screen and (max-width: 450px) {
+    margin: 10px 0px 35px 0px;
+  }
 }
 
 #mainNav > a {
@@ -55,11 +61,11 @@ a, a:visited {
   text-decoration: none;
   display: inline-block;
   font-size: calc(1.5rem + 0.5vw);
-  margin-right: calc(5px + 2vw);
+  /* margin-right: calc(5px + 2vw); */
   
   -moz-text-shadow: 0 0 8px var(--outline-color);
   text-shadow: 0 0 8px var(--outline-color);
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 #mainNav > a:last-child {
@@ -144,14 +150,20 @@ a, a:visited {
 
   overflow-y: scroll;
   @media only screen and (max-width: 850px) {
-    width: 90%;
+    width: 100%;
   }
 }
 
 
 /* width */
 #homeContent::-webkit-scrollbar {
-  width: 15px;
+  width: calc(0.7rem + 0.3vw);
+}
+
+@media only screen and (max-width: 450px) {
+  #homeContent::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* Track */
@@ -165,6 +177,10 @@ a, a:visited {
   background: rgba(0, 0, 0, 0.386); 
   border: 2px solid var(--outline-color);
   border-radius: 10px;
+  @media only screen and (max-width: 850px) {
+    display: none;
+    /* width: 5px; */
+  }
 }
 
 /* Handle on hover */
@@ -179,14 +195,19 @@ a, a:visited {
   margin: 20px 20px 40px 20px;
   @media only screen and (max-width: 850px) {
     flex-direction: column;
-
+    margin: 10px 20px 40px 20px;
+    align-items: center;
+    /* width: 80%; */
   }
 }
 
 #spotifyContainer > * {
   width: 50%;
   @media only screen and (max-width: 850px) {
-    width: auto;
+    width: 80%;
+  }
+  @media only screen and (max-width: 450px) {
+    width: 100%;
   }
 }
 
@@ -205,33 +226,47 @@ a, a:visited {
 
 .merchRow {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  /* flex-direction: row; */
+  justify-content: center;
   width: 100%;
-  height: 50%;
-  padding-bottom: 20px; 
+  gap: 20px;
+  /* height: 50%; */
+  margin-bottom: 20px; 
 }
 
 .merchItem {
-  width: 50%;
+  flex-basis: calc(10rem + 9vw);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Lato";
   font-weight: 500;
+  /* @media only screen and (max-width: 850px) {
+    width: 40%;
+  } */
+  @media only screen and (max-width: 450px) {
+    flex-basis: 45%;
+  }
 }
 
 .merchPic img {
-  width: 90%;
+  width: 100%;
 }
 
 .merchLabel {
   background-color: rgba(255, 255, 255, 0.781);
-  width: 90%;
+  width: 100%;
   margin: 0;
   font-size: calc(1.0rem + 0.5vw);
   height: 2lh;
   align-content: center;
   text-decoration: none;
+}
+
+
+
+#dummyProduct {
+  display: none;
 }
