@@ -1,0 +1,183 @@
+#mediaPageContainer {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-flow: row wrap;
+  /* align-items: center; */
+  justify-content: center;
+  gap: calc(2rem);
+  color: #F1F1F1;
+  overflow-y: scroll;
+
+}
+
+a, a:visited {
+  color: #F1F1F1;
+}
+
+#mediaMusic, #mediaPhotos {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+  /* flex: 1; */
+  /* border: 1px solid black; */
+  /* justify-content: left; */
+  /* align-items: flex-start; */
+  /* @media only screen and (max-width: 850px) {
+    flex-basis: 40%;
+  } */
+  @media only screen and (max-width: 850px) {
+    flex-basis: 90%;
+  }
+}
+
+h1 {
+  text-align: left;
+  width: 90%;
+  margin: 50px 0px 50px 0px;
+  font-family: "Do Hyeon";
+  font-weight: 400;
+  font-size: 40px;
+  moz-text-shadow: 0 4px 4px rgba(0, 0, 0, 0.347);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.347);
+  @media only screen and (max-width: 850px) {
+    margin: 30px 0px 30px 0px;
+    flex-basis: 90%;
+  }
+  @media only screen and (max-width: 450px) {
+    margin: 20px 0px 20px 0px;
+    font-size: 36px;
+  }
+}
+
+
+#mediaSpotifyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0;
+  /* margin: 20px 20px 40px 20px; */
+  @media only screen and (max-width: 850px) {
+    flex-direction: column;
+    /* margin: 10px 20px 0px 20px; */
+    align-items: center;
+  }
+}
+
+.spotifyEmbed {
+  /* height: 200px; */
+  /* width: 80%;
+  @media only screen and (max-width: 850px) {
+    width: 80%;
+  }
+  @media only screen and (max-width: 450px) {
+    width: 100%;
+  } */
+  
+}
+
+
+.splide {
+  width: 100%;
+}
+
+.splideContainer {
+  width: 100%;
+  position: relative;
+}
+
+.splide__track {
+  /* position: absolute; */
+}
+
+.splide__slide img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  /* max-height: 25rem; */
+  object-fit: cover;
+}
+
+.splide__arrows {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.splide__arrow {
+  width: 70px;
+  height: 70px;
+  background-size:cover;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  @media only screen and (max-width: 450px) {
+    width: 55px;
+  height: 55px;
+  }
+}
+
+.splide__arrow--prev {
+  background-image: url('../icons/backArrowWhite.png');
+}
+.splide__arrow--prev:disabled {
+  background-image: url('../icons/backArrowGrey.png');
+}
+
+.splide__arrow--next {
+  background-image: url('../icons/forwardArrowWhite.png');
+}
+.splide__arrow--next:disabled {
+  background-image: url('../icons/forwardArrowGrey.png');
+}
+
+.splide__pagination {
+  display: none;
+}
+
+#mediaVids{
+  width: 90%;
+}
+
+#mediaVidsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  row-gap: calc(1rem + 1vw);
+  /* flex-basis: 45%; */
+  /* flex: 1; */
+  /* border: 1px solid black; */
+  /* justify-content: left; */
+  /* align-items: flex-start; */
+  /* @media only screen and (max-width: 850px) {
+    flex-basis: 40%;
+  } */
+  /* @media only screen and (max-width: 850px) {
+    flex-basis: 90%;
+  } */
+}
+
+.mediaVid {
+  /* flex-basis: calc(5rem + 33vw); */
+  flex-basis: 48%;
+  @media only screen and (max-width: 850px) {
+    flex-basis: 100%;
+  }
+  
+}
+
+.youtubeEmbed {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+
+.shopify-buy-frame--product {
+  display: none !important;
+}

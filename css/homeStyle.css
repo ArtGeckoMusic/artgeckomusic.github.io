@@ -3,7 +3,7 @@ a, a:visited {
 }
 
 #mainBG {
-  background-image: url("../img/bandPic4.jpg");
+  background-image: url("../img/oldBG.jpg");
   background-size: cover;
 }
 
@@ -217,7 +217,7 @@ h1 {
   }
 }
 
-#spotifyEmbed {
+.spotifyEmbed {
   height: 90px;
 }
 
@@ -327,5 +327,9 @@ h1 {
 
 
 #dummyProduct {
+  display: none;
+}
+
+.shopify-buy-frame--product {
   display: none;
 }
