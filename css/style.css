@@ -111,8 +111,10 @@ html {
   margin: 10px;
   padding: 5px;
   border: 1px solid white;
+  align-self: center;
+  width: 85%;
   @media only screen and (max-width: 450px) {
-    width: 90%;
+    /* width: 85%; */
     padding: 10px;
   }
 }
