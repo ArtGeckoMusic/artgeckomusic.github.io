@@ -24,6 +24,7 @@ a, a:visited {
   align-items: center;
   width: calc(6rem);
   height: 100%;
+  cursor: pointer;
 }
 
 .headerIcon > img {
@@ -51,7 +52,7 @@ a, a:visited {
   margin: 35px 0px 35px 0px;
   font-family: "Inconsolata";
   @media only screen and (max-width: 450px) {
-    margin: 10px 0px 35px 0px;
+    margin: 10px 0px 50px 0px;
   }
 }
 
@@ -80,6 +81,7 @@ a, a:visited {
   height: 100px !important;
   margin-top: calc(1rem + 1vh);
   display: block !important;
+  z-index: 1 !important;
   visibility: hidden;
   /* margin-left: 10px !important; */
   /* background-image: url(../icons/cartWhite.png); */
@@ -140,12 +142,14 @@ a, a:visited {
 
 h1 {
   font-size: calc(1.7rem + 0.5vw);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 
 #homeContent {
-  background-color: rgba(255, 255, 255, 0.443);
+  background-color: rgba(255, 255, 255, 0.374);
 
-  width: 60%;
+  width: 70%;
   height: 100%;
   border: 8px rgba(30, 30, 30, 0.596);
   border-style: outset;
@@ -158,6 +162,7 @@ h1 {
   overflow-y: scroll;
   @media only screen and (max-width: 850px) {
     width: 100%;
+    border: 2px solid rgba(30, 30, 30, 0.596);
   }
 }
 
@@ -274,9 +279,10 @@ h1 {
 
 
 
-#homeMerchContainer > h1 {
+/* #homeMerchContainer > h1 {
   text-decoration: underline;
-}
+  text-decoration-thickness: 2px;
+} */
 
 #homeMerch {
   display: flex;
@@ -295,7 +301,7 @@ h1 {
 }
 
 .merchItem {
-  flex-basis: calc(10rem + 9vw);
+  flex-basis: calc(10rem + 3vw);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -331,5 +337,5 @@ h1 {
 }
 
 .shopify-buy-frame--product {
-  display: none;
+  display: none !important;
 }
