@@ -111,6 +111,10 @@ h3 {
 }
 
 
-/* .shopify-buy-frame--product {
+.shopify-buy-frame--product {
   display: none !important;
+}
+
+/* .shopifyButtonArea {
+  display: none;
 } */

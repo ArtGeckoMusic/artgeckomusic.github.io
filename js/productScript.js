@@ -2,22 +2,44 @@ $(document).ready(() => {
   $('.shopify-buy__cart-toggle__count').on('DOMSubtreeModified', function(){
     console.log('changed');
   });
-
 });
 
-function showOrHideProduct() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const productValue = urlParams.get('product');
-  console.log(productValue);  
+function awaitButton() {
+  // wait for shopify buy button to show up so we can show or hide it
+  var checkButtonExist = setInterval(function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const productValue = urlParams.get('product');
 
-  $('#' + productValue).css('display', 'flex');
+    if ($('#' + productValue).find('.shopify-buy-frame--product').length) {
+      //  console.log("Exists!");
+      clearInterval(checkButtonExist);
+      showOrHideProduct(productValue);
+    }
+    
+    else {
+      // console.log('nope');
+    }
+  }, 10); // check every 10ms
+
+
+  function showOrHideProduct(productValue) {
+    // const urlParams = new URLSearchParams(window.location.search);
+    // const productValue = urlParams.get('product');
+    console.log(productValue);  
+  
+    $('#' + productValue).css('display', 'flex');
+  
+    $('#' + productValue).find('.shopify-buy-frame--product')[0].style.setProperty('display', 'block', 'important');
+  }
 }
 
+
+
 // wait for shopify cart bizness to show up
-var checkExist = setInterval(function() {
+var checkCartExist = setInterval(function() {
   if ($('.shopify-buy-frame--toggle').find('iframe').length) {
     //  console.log("Exists!");
-     clearInterval(checkExist);
+     clearInterval(checkCartExist);
      customizeCartButton();
   }
   

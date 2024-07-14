@@ -148,7 +148,7 @@
       });
     }).then(function() {
       // console.log('loaded');
-      showOrHideProduct();
+      awaitButton();
     });
   }
 })();
