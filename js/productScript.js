@@ -68,8 +68,6 @@ function customizeCartButton(cartCount) {
 
   // if cart has 0 items in it on this page load, hide the count icon
   // This way we can always show the cart, just not the number of items in it if zero
-  // let cartCount = $('.shopify-buy-frame--toggle').find('iframe').contents().find('.shopify-buy__cart-toggle__count')[0];
-  // let cartCount = document.querySelector('.shopify-buy-frame--toggle').getElementsByTagName('iframe')[0].contentWindow.document.body.getElementsByClassName('shopify-buy__cart-toggle__count')[0];
   if (cartCount.innerText == '0') {
     $(cartCount).css('visibility', 'hidden');
     console.log('cart empty');

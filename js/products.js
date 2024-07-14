@@ -1,3 +1,7 @@
+/*
+All the bull crap shopify makes you include so the buy buttons and cart work
+*/
+
 
 
 
