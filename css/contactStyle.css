@@ -1,4 +1,4 @@
-#showsPageContainer {
+#contactPageContainer {
   position: relative;
   flex: 1;
   min-height: 0;
@@ -18,7 +18,8 @@ h1 {
   text-align: left;
   width: 90%;
   margin: 50px 0px 30px 0px;
-  font-family: "Do Hyeon";
+  /* font-family: "Do Hyeon"; */
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 400;
   font-size: 40px;
   moz-text-shadow: 0 4px 4px rgba(0, 0, 0, 0.347);
