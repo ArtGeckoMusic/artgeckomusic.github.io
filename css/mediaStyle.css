@@ -66,17 +66,20 @@ h1 {
   }
 }
 
-.spotifyEmbed {
-  /* height: 200px; */
-  /* width: 80%;
-  @media only screen and (max-width: 850px) {
-    width: 80%;
-  }
+#spotifyEmbedSmall {
+  display: none;
   @media only screen and (max-width: 450px) {
-    width: 100%;
-  } */
-  
+    display: block;
+  }
 }
+
+#spotifyEmbedLarge {
+  display: block;
+  @media only screen and (max-width: 450px) {
+    display: none;
+  }
+}
+
 
 
 .splide {
