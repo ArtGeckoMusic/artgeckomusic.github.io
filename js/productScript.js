@@ -37,10 +37,11 @@ function awaitButton() {
 
 // wait for shopify cart bizness to show up
 var checkCartExist = setInterval(function() {
-  if ($('.shopify-buy-frame--toggle').find('iframe').length) {
+  let cartCountDiv = $('.shopify-buy-frame--toggle').find('iframe').contents().find('.shopify-buy__cart-toggle__count')[0];
+  if (cartCountDiv) {
     //  console.log("Exists!");
      clearInterval(checkCartExist);
-     customizeCartButton();
+     customizeCartButton(cartCountDiv);
   }
   
   else {
@@ -49,7 +50,7 @@ var checkCartExist = setInterval(function() {
 }, 10); // check every 10ms
 
 
-function customizeCartButton() {
+function customizeCartButton(cartCount) {
   console.log('modding cart button');
   
   // inject my custom css into the iframe that shopify creates for the cart button
@@ -67,7 +68,8 @@ function customizeCartButton() {
 
   // if cart has 0 items in it on this page load, hide the count icon
   // This way we can always show the cart, just not the number of items in it if zero
-  let cartCount = $('.shopify-buy-frame--toggle').find('iframe').contents().find('.shopify-buy__cart-toggle__count')[0];
+  // let cartCount = $('.shopify-buy-frame--toggle').find('iframe').contents().find('.shopify-buy__cart-toggle__count')[0];
+  // let cartCount = document.querySelector('.shopify-buy-frame--toggle').getElementsByTagName('iframe')[0].contentWindow.document.body.getElementsByClassName('shopify-buy__cart-toggle__count')[0];
   if (cartCount.innerText == '0') {
     $(cartCount).css('visibility', 'hidden');
     console.log('cart empty');
