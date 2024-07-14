@@ -42,6 +42,10 @@ h1 {
   /* gap: calc(1rem + 0.8vw) calc(1.2rem + 1vw); */
 }
 
+.homeShow {
+  text-align: left;
+}
+
 
 
 .shopify-buy-frame--product {

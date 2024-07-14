@@ -142,9 +142,6 @@
   "toggle": {}
 },
       });
-    }).then(function() {
-      // console.log('loaded');
-      showOrHideProduct();
     });
   }
 })();
