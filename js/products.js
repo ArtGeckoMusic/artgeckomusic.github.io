@@ -482,7 +482,7 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
         id: '8943057862887',
-        node: document.getElementById('product-component-1720915772307'),
+        node: document.getElementById('product-component-1720917771734'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -492,7 +492,8 @@
           "max-width": "calc(25% - 20px)",
           "margin-left": "20px",
           "margin-bottom": "50px"
-        }
+        },
+        "text-align": "left"
       },
       "title": {
         "color": "#323232"
@@ -782,7 +783,7 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
         id: '8948955283687',
-        node: document.getElementById('product-component-1720915948748'),
+        node: document.getElementById('product-component-1720917709141'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -792,7 +793,8 @@
           "max-width": "calc(25% - 20px)",
           "margin-left": "20px",
           "margin-bottom": "50px"
-        }
+        },
+        "text-align": "left"
       },
       "title": {
         "color": "#323232"
