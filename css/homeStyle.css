@@ -52,13 +52,13 @@ a, a:visited {
   margin: 35px 0px 35px 0px;
   font-family: "Inconsolata";
   @media only screen and (max-width: 450px) {
-    margin: 10px 0px 50px 0px;
+    margin: 10px 0px 30px 0px;
   }
 }
 
 #mainNav > a {
   
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
   display: inline-block;
   font-size: calc(1.5rem + 0.5vw);
