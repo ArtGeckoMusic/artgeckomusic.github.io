@@ -134,6 +134,7 @@ h1 {
 }
 .splide__arrow--prev:disabled {
   background-image: url('../icons/backArrowGrey.png');
+  cursor: default;
 }
 
 .splide__arrow--next {
@@ -141,6 +142,7 @@ h1 {
 }
 .splide__arrow--next:disabled {
   background-image: url('../icons/forwardArrowGrey.png');
+  cursor: default;
 }
 
 .splide__pagination {

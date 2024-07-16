@@ -55,13 +55,11 @@ body {
 }
 
 
-.productPic img {
+/* .productPic img {
   width: 100%;
   height: auto;
-  /* max-height: 100%; */
   display: block;
-  
-}
+} */
 
 .productDescription {
   margin-left: 20px;
@@ -98,6 +96,75 @@ h3 {
     margin: 10px 0 10px 0;
   }
 }
+
+
+.splide {
+  width: 100%;
+}
+
+.splideContainer {
+  width: 100%;
+  position: relative;
+}
+
+/* .splide__track {
+
+} */
+
+
+.splide__slide img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: scale-down;
+  @media only screen and (max-width: 450px) {
+    aspect-ratio: 4/3;
+  }
+}
+
+.splide__arrows {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.splide__arrow {
+  width: 70px;
+  height: 70px;
+  background-size:cover;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  @media only screen and (max-width: 450px) {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+.splide__arrow--prev {
+  background-image: url('../icons/backArrowWhite.png');
+}
+.splide__arrow--prev:disabled {
+  background-image: url('../icons/backArrowGrey.png');
+  cursor: default;
+}
+
+.splide__arrow--next {
+  background-image: url('../icons/forwardArrowWhite.png');
+}
+.splide__arrow--next:disabled {
+  background-image: url('../icons/forwardArrowGrey.png');
+  cursor: default;
+}
+
+.splide__pagination {
+  display: none;
+}
+
 
 .productDescription p {
   margin-bottom: 10px;
