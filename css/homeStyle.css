@@ -3,8 +3,11 @@ a, a:visited {
 }
 
 #mainBG {
-  background-image: url("../img/oldBG.jpg");
+  background-image: url("../img/landscapeBG2Cropped.jpg");
   background-size: cover;
+  @media only screen and (max-width: 450px) {
+    background-image: url("../img/portraitBG2.jpg");
+  }
 }
 
 .mainHeader {
@@ -22,13 +25,44 @@ a, a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(6rem);
+  
   height: 100%;
   cursor: pointer;
 }
 
+#headerHamb {
+  width: calc(6rem + 5vw);
+}
+
 .headerIcon > img {
   width: calc(3rem + 0.5vw);
+}
+
+#headerHamb svg {
+  width: calc(3rem + 0.5vw);
+}
+
+#headerHamb path {
+  stroke: black;
+  stroke-width: 1px;
+}
+
+#headerHamb svg {
+  width: calc(3rem + 0.8vw);
+}
+
+#headerShop {
+  margin-top: -40px;
+  width: calc(6rem + 3vw);
+}
+
+#headerShop svg {
+  width: calc(4.5rem + 0.8vw);
+}
+
+#headerShop path {
+  stroke: black;
+  stroke-width: 1px;
 }
 
 #headerLogo {
@@ -62,9 +96,10 @@ a, a:visited {
   text-decoration: none;
   display: inline-block;
   font-size: calc(1.5rem + 0.5vw);
+  color: rgb(222, 252, 255);
   
   -moz-text-shadow: 0 0 8px var(--outline-color);
-  text-shadow: 0 0 8px var(--outline-color);
+  text-shadow: 0 0 8px black;
 }
 
 #mainNav > a:last-child {
@@ -75,7 +110,7 @@ a, a:visited {
 .shopify-buy-frame--toggle {
   top: 45px !important;
   margin-right: 5px !important;
-  width: calc(6rem);
+  width: calc(6rem + 3vw);
   height: 100px !important;
   margin-top: calc(1rem + 1vh);
   display: block !important;
@@ -91,14 +126,19 @@ a, a:visited {
 .shopify-buy__cart-toggle {
   background-color: transparent;
   padding: 0;
-  background-image: url('../icons/cart.png');
-  height: calc(3.5rem + 8vw);
-  min-width: 55px;
+  /* background-image: url('../icons/cartWhiteSVG.svg'); */
+  height: calc(4.5rem + 8vw);
+  min-width: 75px;
   background-size: cover;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.shopify-buy__cart-toggle path {
+  stroke: black;
+  stroke-width: 2px;
 }
 
 .shopify-buy__cart-toggle:hover {
@@ -143,7 +183,7 @@ h1 {
 }
 
 #homeContent {
-  background-color: rgba(255, 255, 255, 0.374);
+  background-color: rgba(255, 255, 255, 0.587);
 
   width: 70%;
   height: 100%;
@@ -332,6 +372,20 @@ h1 {
   height: 2lh;
   align-content: center;
   text-decoration: none;
+}
+
+#outlineFooter {
+  display: none;
+  @media only screen and (max-width: 450px) {
+    display: flex;
+  }
+}
+
+#greyFooter {
+  display: flex;
+  @media only screen and (max-width: 450px) {
+    display: none;
+  }
 }
 
 
