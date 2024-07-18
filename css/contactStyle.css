@@ -14,10 +14,22 @@ a, a:visited {
   color: #F1F1F1;
 }
 
+.formContainer {
+  width: 90%;
+  text-align: left;
+  font-size: 24px;
+  font-family: "Lato";
+  moz-text-shadow: 0 4px 4px rgba(0, 0, 0, 0.347);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.347);
+  /* border-radius: 5px; */
+  /* background-color: #f2f2f2; */
+  /* padding: 20px; */
+}
+
 h1 {
   text-align: left;
   width: 90%;
-  margin: 50px 0px 30px 0px;
+  margin: 50px 0px 20px 0px;
   /* font-family: "Do Hyeon"; */
   font-family: 'Courier New', Courier, monospace;
   font-family: 'Do Hyeon';
@@ -30,16 +42,15 @@ h1 {
   }
 }
 
-.formContainer {
+h2 {
   width: 90%;
   text-align: left;
-  font-size: 24px;
   font-family: "Lato";
-  moz-text-shadow: 0 4px 4px rgba(0, 0, 0, 0.347);
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.347);
-  /* border-radius: 5px; */
-  /* background-color: #f2f2f2; */
-  /* padding: 20px; */
+  font-weight: 500;
+  font-size: calc(1.1rem + 0.4vw);
+  moz-text-shadow: 0 2px 2px rgba(0, 0, 0, 0.347);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.347);
+  margin-bottom: 30px;
 }
 
 form {
