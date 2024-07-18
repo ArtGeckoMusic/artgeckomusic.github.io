@@ -183,7 +183,7 @@ footer {
   height: 100%;
 }
 
-.otherHeaderIcon {
+#headerHamb {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,7 +192,7 @@ footer {
   cursor: pointer;
 }
 
-.otherHeaderIcon > img {
+#headerHamb > img {
   width: 30%;
 }
 
@@ -235,14 +235,27 @@ footer {
 
 #headerShop {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(5rem);
+  margin-left: calc(0.5rem + 0.6vw) !important;
+  height: 80%;
+  cursor: pointer;
+  /* margin-left: 10px; */
   @media only screen and (max-width: 750px) {
     display: flex;
   }
 }
 
+
+#headerShop > svg {
+  width: 70%;
+  /* margin-top: -20px; */
+}
+
 .shopify-buy-frame--toggle {
   top: 45px !important;
-  margin-right: 10px !important;
+  margin-left: 10px !important;
   width: calc(5rem);
   height: 90px !important;
   display: block !important;
@@ -260,7 +273,7 @@ footer {
 .shopify-buy__cart-toggle {
   background-color: transparent;
   padding: 0;
-  background-image: url('../icons/cartWhite.png');
+  /* background-image: url('../icons/cartWhite.png'); */
   height: calc(2.5rem + 8vw);
   background-size: cover;
   position: fixed;
