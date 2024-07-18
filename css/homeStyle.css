@@ -67,7 +67,7 @@ a, a:visited {
 
 #headerShop {
   margin-top: -40px;
-  width: calc(4.5rem + 3vw);
+  width: calc(5rem + 3vw);
 }
 
 #headerShop svg {
@@ -131,7 +131,7 @@ a, a:visited {
 .shopify-buy-frame--toggle {
   top: 45px !important;
   margin-right: 5px !important;
-  width: calc(4.5rem + 3vw);
+  width: calc(5rem + 3vw);
   height: 100px !important;
   margin-top: calc(1rem + 1vh);
   display: block !important;
@@ -173,13 +173,18 @@ a, a:visited {
 
 .shopify-buy__cart-toggle__count {
   position: fixed;
-  right: -15px;
+  /* right: -15px; */
+  right: calc(1rem - 7vw);
   top: -10px;
   width: 25px;
-  border: 2px solid rgb(0, 0, 0);
-  color: black;
+  border: 2px solid rgb(255, 255, 255);
+  -moz-text-shadow: 0 0 2px rgb(0, 0, 0);
+  text-shadow: 0 2px 2px rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
   border-radius: 10px;
   margin: 0;
+  outline: 1px solid black;
 }
 
 
