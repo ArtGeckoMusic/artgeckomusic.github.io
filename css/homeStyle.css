@@ -112,13 +112,13 @@ a, a:visited {
   font-size: calc(1.5rem + 0.5vw);
   color: rgb(255, 255, 255);
   
-  -moz-text-shadow: 0 0 8px var(--outline-color);
+  -moz-text-shadow: 0 0 8px black;
   text-shadow: 0 0 8px black;
 
   @media only screen and (max-width: 450px) {
     color: rgb(255, 255, 255);
   
-    -moz-text-shadow: 0 0 8px var(--outline-color);
+    -moz-text-shadow: 0 0 8px black;
     text-shadow: 0 0 8px black;
   }
 }
@@ -178,7 +178,7 @@ a, a:visited {
   top: -10px;
   width: 25px;
   border: 2px solid rgb(255, 255, 255);
-  -moz-text-shadow: 0 0 2px rgb(0, 0, 0);
+  -moz-text-shadow: 0 2px 2px rgb(0, 0, 0);
   text-shadow: 0 2px 2px rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -220,7 +220,7 @@ h1 {
   border-radius: 15px;
   font-weight: bold;
   text-decoration: none;
-  -moz-text-shadow: 0 0 3px rgba(0, 0, 0, 0.347);
+  -moz-text-shadow: 0 0 4px rgba(255, 255, 255, 0.653);
   text-shadow: 0 0 4px rgba(255, 255, 255, 0.653);
 
   overflow-y: scroll;
@@ -406,16 +406,28 @@ h1 {
 
 #outlineFooter {
   display: none;
+  color: white;
+  font-size: 12px;
   @media only screen and (max-width: 450px) {
-    display: flex;
+    display: block;
   }
 }
 
 #greyFooter {
-  display: flex;
+  display: block;
+  color: rgb(48, 48, 48);
+  font-size: 18px;
+  font-weight: bold;
+  -moz-text-shadow: 0 0 2px rgb(255, 255, 255);
+  text-shadow: 0 0 2px rgb(255, 255, 255);
   @media only screen and (max-width: 450px) {
     display: none;
   }
+}
+
+.homeFooter p {
+  margin: 5px 0 5px 0;
+  
 }
 
 
