@@ -51,6 +51,11 @@ h1 {
   }
 }
 
+h2 {
+  text-align: left;
+  font-family: "Do Hyeon";
+  font-weight: 400;
+}
 
 #mediaSpotifyContainer {
   display: flex;
