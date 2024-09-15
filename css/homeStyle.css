@@ -33,6 +33,9 @@ a, a:visited {
   height: 100px;
   width: 100%;
   padding-top: calc(1rem + 1vh);
+  @media only screen and (max-width: 450px) {
+    height: 80px;
+  }
 }
 
 .headerIcon {
@@ -48,30 +51,22 @@ a, a:visited {
   width: calc(6rem + 5vw);
 }
 
-.headerIcon > img {
-  width: calc(3rem + 0.5vw);
-}
-
-#headerHamb svg {
-  width: calc(3rem + 0.5vw);
-}
-
 #headerHamb path {
   stroke: black;
   stroke-width: 1px;
 }
 
 #headerHamb svg {
-  width: calc(3rem + 0.8vw);
+  width: calc(2.7rem + 0.8vw);
 }
 
 #headerShop {
   margin-top: -40px;
-  width: calc(5rem + 3vw);
+  width: calc(4.5rem + 3vw);
 }
 
 #headerShop svg {
-  width: calc(4.5rem + 0.8vw);
+  width: calc(4rem + 0.8vw);
 }
 
 #headerShop path {
@@ -86,7 +81,7 @@ a, a:visited {
 
 #headerLogo img {
   max-height: 100%;
-  width: calc(8rem + 3vw);
+  width: calc(6.5rem + 3vw);
 }
 
 #mainNav {
@@ -174,7 +169,7 @@ a, a:visited {
 .shopify-buy__cart-toggle__count {
   position: fixed;
   /* right: -15px; */
-  right: calc(1rem - 7vw);
+  right: calc(1rem - 9vw);
   top: -10px;
   width: 25px;
   border: 2px solid rgb(255, 255, 255);
