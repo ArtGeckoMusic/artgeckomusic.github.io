@@ -270,6 +270,16 @@ h1 {
   background: rgba(0, 0, 0, 0.505); 
 }
 
+#homeContent h1 {
+  text-align: end;
+  padding-right: 90px;
+  box-sizing: border-box;
+  @media only screen and (max-width: 850px) {
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
 #homeSpotifyContainer {
   display: flex;
   flex-direction: row;
@@ -347,6 +357,50 @@ h1 {
   text-align: right;
 }
 
+#homeVidContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin: 20px 20px 40px 20px; */
+  align-items: center;
+  @media only screen and (max-width: 850px) {
+    flex-direction: column;
+    margin: 10px 20px 20px 20px;
+    align-items: center;
+  }
+}
+
+#homeVidContainer > * {
+  width: 50%;
+  margin-top: 0;
+  @media only screen and (max-width: 850px) {
+    width: 80%;
+  }
+  @media only screen and (max-width: 450px) {
+    width: 100%;
+  }
+}
+
+.youtubeEmbed {
+  aspect-ratio: 16/9;
+}
+
+/* #homeVidContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+#homeVidContainer > h2 {
+  border-bottom: 1px solid black;
+  width: 50%;
+  text-align: center;
+  padding-bottom: 8px;
+  @media only screen and (max-width: 450px) {
+    width: 100%;
+  }
+}
+
 #homeMerchContainer {
   display: flex;
   flex-direction: column;
@@ -354,8 +408,6 @@ h1 {
 }
 
 #homeMerchContainer > h1 {
-  /* text-decoration: underline;
-  text-decoration-thickness: 1px; */
   border-bottom: 1px solid black;
   width: 80%;
   text-align: center;
