@@ -309,7 +309,7 @@ h1 {
   align-items: flex-start;
   @media only screen and (max-width: 850px) {
     flex-direction: column;
-    margin: 10px 20px 40px 20px;
+    margin: 10px 10px 40px 10px;
     align-items: center;
   }
 }
@@ -327,7 +327,7 @@ h1 {
 
 #homeShows {
   /* background-color: rgba(119, 119, 109, 1); */
-  font-size: calc(1.3rem + 0.3vw);
+  font-size: calc(1.2rem + 0.4vw);
   border: 1px solid black;
   border-radius: 15px;
   /* @media only screen and (max-width: 850px) {
@@ -350,6 +350,7 @@ h1 {
 
 .showDeets {
   text-align: right;
+  color: blue;
 }
 
 #homeVidContainer {
