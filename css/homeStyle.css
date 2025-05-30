@@ -421,6 +421,7 @@ h1 {
 #homeMerchContainer > h1 {
   border-bottom: 1px solid black;
   width: 80%;
+  padding-right: 0px;
   text-align: center;
   padding-bottom: 8px;
 }
