@@ -286,6 +286,10 @@ h1 {
   }
 }
 
+#homeLinkContainer h1 {
+  padding-right: 0px;
+}
+
 #homeSpotifyContainer {
   display: flex;
   flex-direction: row;
