@@ -39,7 +39,7 @@ function awaitButton() {
 var checkCartExist = setInterval(function() {
   let cartCountDiv = $('.shopify-buy-frame--toggle').find('iframe').contents().find('.shopify-buy__cart-toggle__count')[0];
   if (cartCountDiv) {
-    //  console.log("Exists!");
+    //  console.log("Cart exists!");
      clearInterval(checkCartExist);
      customizeCartButton(cartCountDiv);
   }
