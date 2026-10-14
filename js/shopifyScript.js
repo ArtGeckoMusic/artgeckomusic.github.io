@@ -11,7 +11,7 @@ function awaitButton() {
     const productValue = urlParams.get('product');
 
     if ($('#' + productValue).find('.shopify-buy-frame--product').length) {
-      //  console.log("Exists!");
+       console.log("Exists!");
       clearInterval(checkButtonExist);
       showOrHideProduct(productValue);
     }
