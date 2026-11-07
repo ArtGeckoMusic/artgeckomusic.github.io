@@ -290,6 +290,10 @@ h1 {
   padding-right: 0px;
 }
 
+#homeStreamingLinks {
+  /* text-align: left; */
+}
+
 #homeSpotifyContainer {
   display: flex;
   flex-direction: row;
@@ -314,6 +318,11 @@ h1 {
 
 .spotifyEmbed {
   height: 90px;
+}
+
+#linktree {
+  font-size: calc(1.2rem + 0.4vw);
+  color: blue;
 }
 
 #homeShowsContainer {
